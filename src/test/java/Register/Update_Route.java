@@ -12,7 +12,7 @@ import POM_Classes.Login;
 import POM_Classes.Route;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Register_Route {
+public class Update_Route {
 
 	WebDriver driver;
 	SoftAssert soft = new SoftAssert();
@@ -28,12 +28,12 @@ public class Register_Route {
 
 	@Test(priority = 0)
 	public void Login_Page() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		Login l = new Login(driver);
 		l.enterUsername();
 		l.enterPassword();
 		l.clickOnSubmit();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 1)

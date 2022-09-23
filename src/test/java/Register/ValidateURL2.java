@@ -55,7 +55,7 @@ public class ValidateURL2 {
 		driver.findElement(By.xpath("//span[text()='Register']")).click();     //click on register
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Route']")).click();             //click on route
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		String URL = driver.getCurrentUrl();
 		Assert.assertEquals(URL, "http://dairyerp.eanifarm.com/route_reg");
 		System.out.println("Route URL is correct / Test Pass");

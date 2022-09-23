@@ -39,13 +39,13 @@ public class Route {
 	public void enterRouteCode() throws InterruptedException {
 		Thread.sleep(2000);
 		RouteCode.click();
-		RouteCode.sendKeys("056");
+		RouteCode.sendKeys("057");
 		Thread.sleep(1000);
 	}
 
 	public void enterRouteName() throws InterruptedException {
 		RouteName.click();
-		RouteName.sendKeys("pune-karad");
+		RouteName.sendKeys("pune-banglore");
 		Thread.sleep(1000);
 	}
 
@@ -60,10 +60,14 @@ public class Route {
 		// s.deselectByVisibleText("003-STPL Unit 3");
 		Thread.sleep(3000);
 		// list.click();
-		driver.findElement(By.xpath("//span[text()='002-STPL Unit 2']")).click();
+		driver.findElement(By.xpath("//span[text()='003-STPL Unit 3']")).click();
+		SelectUnit.click();
+		driver.findElement(By.xpath("//span[text()='004-STPL Unit 4']")).click();
+		SelectUnit.click();
+		driver.findElement(By.xpath("//span[text()='005-STPL Unit 5']")).click();
 		// UnitName.sendKeys("003-STPL Unit 3");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@class='btn btn-sm btn-success px-2 mr-2']")).click();
+		driver.findElement(By.xpath("//button[@class='btn btn-sm btn-success px-2 mr-2']")).click();      //add button 
 	}
 
 	public void save() throws InterruptedException {

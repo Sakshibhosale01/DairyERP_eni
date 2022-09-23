@@ -2,8 +2,10 @@ package POM_Classes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -67,8 +69,14 @@ public class Supervisor {
 
 	public void scrollingPage() throws InterruptedException {
 		Thread.sleep(2000);
-		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("arguments[0].scrollIntoView()", Username);
+//		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+//		jsExecutor.executeScript("arguments[0].scrollIntoView()", Username);
+//		jsExecutor.executeScript("arguments[0].scrollIntoView().window.scrollBy(0,500)");
+//		Actions act=new Actions(driver);
+//		act.scrollToElement(Username);
+		Actions a = new Actions(driver);
+		//scrolling down a page
+	     a.sendKeys(Keys.PAGE_DOWN).build().perform(); 
 	}
 
 	public void unitDetails() throws InterruptedException {

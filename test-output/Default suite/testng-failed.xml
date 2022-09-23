@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Register.ValidateURL2">
+      <class name="Register.Create_Route">
         <methods>
-          <include name="unitURL"/>
-          <include name="LaunchedWeb"/>
+          <include name="verifySave"/>
+          <include name="demo1"/>
         </methods>
-      </class> <!-- Register.ValidateURL2 -->
+      </class> <!-- Register.Create_Route -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
